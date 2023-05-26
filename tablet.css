@@ -1,0 +1,111 @@
+.container{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+}
+
+#header .menu{
+    display: inline-block;
+}
+
+.logo{
+    width: 25vw;
+    /* margin-left: 170px; */
+    height: auto;
+    text-align: center;
+}
+
+.imagem{
+    text-align: center;
+}
+
+.item{
+    font: 500 15px 'Mont', sans-serif;
+    padding: 0 18px;
+    margin: 0;
+
+}
+
+.item:hover{
+    font: 500 15px 'Mont', sans-serif;
+    color: #678471;
+}
+
+.conteudo .titulo{
+    font: 500 30px 'Mont', sans-serif;
+    margin-top: 0px;
+}
+
+.texto{
+    font: 200 20px 'Mont', sans-serif;
+    margin-right: 40px;
+    margin-bottom: 90px;
+}
+
+#nossaEquipe .container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.imagem .panela{
+    text-align: center;
+    margin-left: 4px;
+}
+
+.cardapio{
+    margin: 0;
+}
+
+.cardapio .titulo{
+    font: 500 30px 'Mont', sans-serif;
+    margin-left: 40px;
+}
+
+#contato{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+#contato .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.name{
+    width: 90vw;
+    text-align: center;
+    margin: 0;
+}
+
+.name .amm{
+    font: 500 30px 'Mont', sans-serif;
+    margin: 40px 0 0;
+}
+
+.redes{
+    display: block;
+    margin: 50px 0;
+    width: 90vw;
+}
+
+.rede{
+    display: flex;
+    text-align: center;
+    margin: 10 0;
+    width: 90vw;
+}
+
+.endereco{
+    width: 90vw;
+    margin-bottom: 25px;
+}
+
+#header .menu{
+    display: block;
+}
