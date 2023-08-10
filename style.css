@@ -31,6 +31,7 @@ html{
 .item{
     font: 500 1.7rem 'Mont', sans-serif;
     color: #678471;
+    margin: 0 15px;
 }
 
 .item:hover{
@@ -47,6 +48,8 @@ html{
 
 #header{
     margin: 0 30px;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* DIVISÃO */
@@ -198,6 +201,11 @@ html{
     margin-top: 4px;
 }
 
+.menu-barras{
+    display: none;
+}
+
+
 
 
 @media screen and (max-width: 400px) {
@@ -207,6 +215,7 @@ html{
         padding: 0;
         display: block;
     }
+
 
     .nossaComida, .panela{
         width: 90vw;
@@ -242,8 +251,8 @@ html{
 
     #header .menu .item{
         font: 400 8px 'Mont', sans-serif;
-        padding: 0 4px;
-
+        padding: 0px 4px;
+        display: initial;
     }
 
     .imagem .panela{
@@ -263,7 +272,7 @@ html{
     }
 
     #header .logo{
-        width: 70vw;
+        width: 60vw;
         margin-left: 25px;
         height: auto;
     }
@@ -341,6 +350,6 @@ html{
     }
 
 
-
+    
 }
 

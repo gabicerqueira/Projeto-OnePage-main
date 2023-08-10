@@ -9,20 +9,23 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tablet.css" media="screen and (max-width: 768px)">
     <link rel="icon" href="Imagens/icone.svg">
+    <script src="https://kit.fontawesome.com/65d3d9eac0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header id="header">
-        <nav class="menu">
-            <div class="imagem">
+        <div class="imagem">
                 <img src="Imagens/logo.png" alt="logo" class="logo">
             </div>
+        <nav class="menu" id="menu">
             <a href="header" class="item">HOME</a>
             <a href="#nossaComida" class="item">NOSSA COMIDA</a>
             <a href="#nossaEquipe" class="item">NOSSA EQUIPE</a>
             <a href="#cardapio" class="item">NOSSO CARDÁPIO</a>
             <a href="#contato" class="item">CONTATO</a>
         </nav>
+        <a class="menu-barras" onclick="mostrarMenu()"><i id="icone" class="fa-solid fa-bars"
+                style="color: #000000;"></i></a>
     </header>
     <!-- FIM CABEÇALHO -->
     <!-- DIVISÃO -->
@@ -58,7 +61,8 @@
                     <h2 class="titulo">NOSSA EQUIPE</h2>
                     <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A accusantium
                         consequuntur, consectetur obcaecati id consequatur itaque officiis quas! Pariatur qui natus
-                        molestias odit? Est, eligendi vero corrupti porro deleniti laborum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A accusantium
+                        molestias odit? Est, eligendi vero corrupti porro deleniti laborum. Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. A accusantium
                         consequuntur, consectetur obcaecati id consequatur itaque officiis quas! Pariatur qui natus
                         molestias odit? Est, eligendi vero corrupti porro deleniti laborum.</p>
                 </div>
@@ -177,11 +181,29 @@
                 </div>
                 <div class="endereco">
                     <h4 class="endereco-titulo">ENDEREÇO:</h4>
-                    <p class="endereco-nome">Rua Regina Cabalau Mendonça, 18 - Vila Bela Vista, Suzano - SP, 08664-140</p>
+                    <p class="endereco-nome">Rua Regina Cabalau Mendonça, 18 - Vila Bela Vista, Suzano - SP, 08664-140
+                    </p>
                 </div>
             </div>
         </section>
     </footer>
 </body>
+
+<script>
+    function mostrarMenu() {
+        var menu = document.getElementById("menu");
+        var icone = document.getElementById("icone");
+
+        if (getComputedStyle(menu).display == 'none') {
+            menu.style.display = "flex";
+            icone.classList.remove("fa-bars");
+            icone.classList.add("fa-times");
+        } else {
+            menu.style.display = "none";
+            icone.classList.remove("fa-times");
+            icone.classList.add("fa-bars");
+        }
+    }
+</script>
 
 </html>
